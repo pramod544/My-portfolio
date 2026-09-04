@@ -2636,3 +2636,11 @@ html {
 html {
     scroll-behavior: smooth;
 }
+.nav-links a {
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+    transform: translateY(-2px);
+}
