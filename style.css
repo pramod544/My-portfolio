@@ -2559,3 +2559,74 @@ html {
     }
 
 }
+/* =========================
+   MOBILE NAVBAR
+========================= */
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        padding: 18px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 24px;
+        color: white;
+    }
+
+    .menu-btn {
+        display: block;
+        color: white;
+        font-size: 28px;
+        padding: 5px 10px;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #111;
+        margin: 0;
+        padding: 10px 0;
+        list-style: none;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 14px 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+}
